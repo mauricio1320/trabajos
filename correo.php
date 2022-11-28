@@ -29,7 +29,7 @@
 	$phone = '';
 	$message = '';
 	$message_res = 'Por favor complete los siguientes campos: ';
-	$recipients = array('1247523@senati.pe');
+	$recipients = array('aqui va el correo');
 	date_default_timezone_set('America/Bogota');
 	$date = date('d/m/Y h:i:s a', time());
 	
