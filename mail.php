@@ -56,11 +56,11 @@ function send_mail($recipients, $recipient_name, $subject, $message, $message_pl
         $mail->Port = 587;
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->SMTPAuth = true;
-        $mail->Username = '1247523@senati.pe';
-        $mail->Password = 'Virtual19';
-        $mail->setFrom('1247523@senati.pe', 'Consultas Web - T .S .I');
+        $mail->Username = 'aqui va el correo';
+        $mail->Password = 'contraseña';
+        $mail->setFrom('correo', 'Consultas Web - T .S .I');
         if($repli_to == null) {
-            $mail->addReplyTo('1247523@senati.pe', 'Consultas Web - T .S .I');
+            $mail->addReplyTo('correo', 'Consultas Web - T .S .I');
         } else {
             $mail->addReplyTo($repli_to, /*'Ventas Web - YMB Industrias'*/);
         }
